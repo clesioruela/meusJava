@@ -1,0 +1,21 @@
+package armazenamento;
+
+public class ExecultaListaLigada {
+
+	public static void main(String[] args) {
+
+		ListaLigada lista = new ListaLigada();
+		
+		System.out.println(lista);
+		
+		lista.adicionaNoComeco("Anamaria");
+		System.out.println(lista);
+
+		lista.adicionaNoComeco("Bonfic");
+		System.out.println(lista);
+
+		lista.adicionaNoComeco("Cassio");
+		System.out.println(lista);
+	}
+
+}

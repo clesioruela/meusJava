@@ -1,0 +1,29 @@
+package Avancados;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class MetodosDefault {
+
+	public static void main(String[] args) {
+
+		List<String> palavras = new ArrayList<>();
+		
+		ComparadorPorTamanho cptm = new ComparadorPorTamanho();
+		
+		palavras.add("Java");
+		palavras.add("C#");
+		palavras.add("PHP");
+		palavras.add("Python");
+		palavras.add("Abc");
+		palavras.add("Kotlin");
+
+		Collections.sort(palavras, cptm);
+
+		System.out.println("\n" + palavras);
+
+	}
+
+}

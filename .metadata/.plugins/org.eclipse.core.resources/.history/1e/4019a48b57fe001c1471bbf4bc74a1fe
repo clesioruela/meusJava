@@ -1,0 +1,29 @@
+package Avancados;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Anonimas {
+	
+	public static void main(String[] args) {
+		
+	List<String> palavras = new ArrayList<>();
+		
+		ComparadorPorTamanho cptm = new ComparadorPorTamanho();
+
+		palavras.add("z");
+		palavras.add("Java");
+		palavras.add("C#");
+		palavras.add("PHP");
+		palavras.add("Python");
+		palavras.add("Aaaaasssdsfsdbc");
+		palavras.add("Abc");
+		palavras.add("Kotlin");
+
+		palavras.stream().sorted(cptm).forEach(p -> {
+			System.out.println(p);
+		});
+		
+	}
+
+}

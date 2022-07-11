@@ -1,0 +1,18 @@
+package armazenamento;
+
+public class Empregado {
+	
+	private String nome;
+	private double salario;
+
+	public Empregado(String nome, double salario) {
+		this.nome = nome;
+		this.salario = salario;
+	}
+	
+	
+	public void almentaSal(double percentual) {
+		salario = (1 + percentual/100) * salario;
+	}
+
+}

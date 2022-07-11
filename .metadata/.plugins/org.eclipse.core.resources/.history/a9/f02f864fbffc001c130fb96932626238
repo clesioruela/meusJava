@@ -1,0 +1,13 @@
+package armazenamento;
+
+public class teste1 {
+
+	public static void main(String[] args) {
+
+		System.out.println(precoComDesconto(1000, 0.8));
+	}
+
+	static double precoComDesconto(int preco, double desconto) {
+		return preco * (1 - desconto);
+	}
+}

@@ -1,0 +1,21 @@
+package Avancados;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MetodosDefault {
+	
+	public static void main(String[] args) {
+		
+		List<String> palavras = new ArrayList<>();
+		palavras.add("Java");
+		palavras.add("C#");
+		palavras.add("PHP");
+		palavras.add("Python");
+		palavras.add("Kotlin");
+		
+		System.out.println(palavras);
+		
+	}
+
+}

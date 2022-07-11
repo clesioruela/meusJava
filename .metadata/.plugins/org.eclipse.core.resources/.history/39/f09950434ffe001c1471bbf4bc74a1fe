@@ -1,0 +1,30 @@
+package Avancados;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class MetodosDefault {
+
+	public static void main(String[] args) {
+
+		List<String> palavras = new ArrayList<>();
+		palavras.add("Java");
+		palavras.add("C#");
+		palavras.add("PHP");
+		palavras.add("Python");
+		palavras.add("Abc");
+		palavras.add("Kotlin");
+
+		Collections.sort(palavras);
+
+		for (int i = 0; i < palavras.size(); i++) {
+			System.out.println("A palavra " + palavras.get(i) + " tem " 
+					+ palavras.get(i).length() + " caracteres");
+
+		}
+		System.out.println(palavras);
+
+	}
+
+}

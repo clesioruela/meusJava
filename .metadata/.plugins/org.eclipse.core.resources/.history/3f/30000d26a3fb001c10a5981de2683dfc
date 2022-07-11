@@ -1,0 +1,32 @@
+package armazenamento;
+
+public class Execult {
+
+	public static void main(String[] args) {
+
+		
+		Aluno a1 = new Aluno("Bertinho Marco");
+		Aluno a2 = new Aluno("Mirta Marta");
+		Aluno a3 = new Aluno("Abel Ferreira");
+		Aluno a4 = new Aluno("Luciana Freitas");
+		Aluno a5 = new Aluno("Tito Moura");
+		
+		Vetor lista = new Vetor();
+		
+		System.out.println("Total de alunos : " + lista.quantidade());
+		
+		lista.adionaAluno(a1);
+		System.out.println("Total de alunos : " + lista.quantidade());
+		//lista.adionaAluno(a2);
+		lista.adionaAluno(a3);
+		lista.adionaAluno(a4);
+		lista.adionaAluno(a5);
+		System.out.println("Total de alunos : " + lista.quantidade());
+		
+		
+		System.out.println(lista);
+		
+		System.out.println(lista.contemAluno(a3));
+	}
+
+}

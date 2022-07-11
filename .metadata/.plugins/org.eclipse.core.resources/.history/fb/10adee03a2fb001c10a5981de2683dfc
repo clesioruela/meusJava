@@ -1,0 +1,36 @@
+package armazenamento;
+
+import java.util.Arrays;
+
+public class Vetor {
+	
+	private Aluno alunos[] = new Aluno[100];
+	private int total = 0;
+	
+	public void adionaAluno(Aluno aluno) {
+		this.alunos[total] = aluno;
+		System.out.println(total);
+		total ++; 
+	}
+
+	public Aluno pegaAluno(int posicao) {
+		return this.alunos[posicao];
+	}
+	
+	public void removeAluno(int posicao) {
+		this.alunos[posicao] = null;
+	}
+	
+	public boolean contemAluno(Aluno aluno) {
+		return false;
+	}
+	
+	public int quantidade() {
+		return 0;
+	}
+	
+	@Override
+	public String toString() {
+		return Arrays.toString(this.alunos);
+	}
+}
